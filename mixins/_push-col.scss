@@ -1,0 +1,3 @@
+@mixin push-col($col) {
+    margin-left: percentage($col/$grid-cols);
+}
