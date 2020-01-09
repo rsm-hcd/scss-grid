@@ -1,4 +1,7 @@
-@function calc-col-width($col) {
+@function calc-col-width($col, $grid: $rhythm-grid) {
+    $grid-cols: map-get($grid, "columns");
+    $col-gutter: map-get($grid, "gutter");
+
     $width-gutter: calc-gutter-width($col);
 
     @if ($col-gutter == 0) {

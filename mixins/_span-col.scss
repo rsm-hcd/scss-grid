@@ -1,9 +1,10 @@
-@mixin span-col($col) {
-    width: calc-col-width($col);
+@mixin span-col($col, $grid: $rhythm-grid) {
+    width: calc-col-width($col, $grid);
     min-width: 0;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc-col-width($col);
-    flex: 0 0 calc-col-width($col);
-    max-width: calc-col-width($col);
+    -ms-flex: 0 0 calc-col-width($col, $grid);
+    flex: 0 0 calc-col-width($col, $grid);
+    max-width: calc-col-width($col, $grid);
     width: 100%;
+    margin-left: map-get($grid, "gutter");
 }
