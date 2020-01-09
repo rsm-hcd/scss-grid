@@ -1,8 +1,10 @@
-$grid-cols: 12; 
-$col-gutter: 8px; 
+$rhythm-grid: (
+    columns: 12,
+    gutter: 8px
+);
 
 $breakpoints: (
-  'small':  767px,
-  'medium': 1024px,
-  'large':  1200px
+    "small": 767px,
+    "medium": 1024px,
+    "large": 1200px
 ) !default;

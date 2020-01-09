@@ -1,0 +1,5 @@
+@function calc-gutter-width($col) {
+    $grid-cols: map-get($rhythm-grid, "columns");
+    $col-gutter: map-get($rhythm-grid, "gutter");
+    @return ($grid-cols + $col) * $col-gutter / $grid-cols;
+}

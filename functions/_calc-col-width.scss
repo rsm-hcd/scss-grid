@@ -1,11 +1,14 @@
-@function calc-col-width($col) {
-    $width-gutter: ($grid-cols + $col) * $col-gutter / $grid-cols;
+@function calc-col-width($col, $grid: $rhythm-grid) {
+    $grid-cols: map-get($grid, "columns");
+    $col-gutter: map-get($grid, "gutter");
+
+    $width-gutter: calc-gutter-width($col);
 
     @if ($col-gutter == 0) {
-        @return percentage($col / $grid-cols); 
-    } 
+        @return percentage($col / $grid-cols);
+    }
     @if ($col-gutter > 0) {
-        $width: percentage($col / $grid-cols); 
-        @return calc(#{$width} - #{$width-gutter}); 
+        $width: percentage($col / $grid-cols);
+        @return calc(#{$width} - #{$width-gutter});
     }
 }
