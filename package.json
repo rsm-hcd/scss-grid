@@ -1,6 +1,6 @@
 {
   "name": "andculturecode.scss.rhythm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Sass (scss) based grid system",
   "main": "andculturecode.scss.rhythm.scss",
   "scripts": {
