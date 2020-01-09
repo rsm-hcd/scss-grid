@@ -1,14 +1,10 @@
-@import 'settings/settings';
+@import "settings/settings";
 
-@import 'functions/calc-col-width';
+@import "functions/_functions";
 
-@import 'mixins/clearfix';
+@import "mixins/clearfix";
 
-@import 'mixins/span-col';
-
-@import 'mixins/push-col';
-
-@import 'mixins/media';
+@import "mixins/_mixins";
 
 
 .o-rhythm {
@@ -90,7 +86,6 @@
 
     &__col {
         width: 100%;
-
         &.-span-one {
             @include span-col(1);
 

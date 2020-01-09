@@ -1,0 +1,3 @@
+@function calc-gutter-width($col) {
+    @return ($grid-cols + $col) * $col-gutter / $grid-cols;
+}
