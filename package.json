@@ -1,25 +1,29 @@
 {
-  "name": "andculturecode.scss.rhythm",
-  "version": "1.0.2",
-  "description": "Sass (scss) based grid system",
-  "main": "andculturecode.scss.rhythm.scss",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AndcultureCode/AndcultureCode.Scss.rhythm.git"
-  },
-  "keywords": [
-    "scss",
-    "sass",
-    "grid",
-    "flexbox"
-  ],
-  "author": "Zach McCleaf",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/AndcultureCode/AndcultureCode.Scss.rhythm/issues"
-  },
-  "homepage": "https://github.com/AndcultureCode/AndcultureCode.Scss.rhythm#readme"
+    "author": {
+        "email": "developer@andculture.com",
+        "name": "andculture",
+        "url": "https://www.andculture.com"
+    },
+    "bugs": {
+        "url": "https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/issues"
+    },
+    "description": "Sass (scss) based grid system",
+    "homepage": "https://github.com/AndcultureCode/AndcultureCode.Scss.grid#readme",
+    "keywords": [
+        "scss",
+        "sass",
+        "grid",
+        "flexbox"
+    ],
+    "license": "Apache-2.0",
+    "main": "dist/andculturecode.scss.grid.scss",
+    "name": "andculturecode-scss-grid",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AndcultureCode/AndcultureCode.Scss.Grid.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "version": "2.0.0"
 }

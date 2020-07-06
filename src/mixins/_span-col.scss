@@ -1,4 +1,4 @@
-@mixin span-col($col, $grid: $rhythm-grid) {
+@mixin span-col($col, $grid: $grid-grid) {
     width: calc-col-width($col, $grid);
     min-width: 0;
     -webkit-box-flex: 0;

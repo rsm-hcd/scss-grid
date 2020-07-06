@@ -1,0 +1,5 @@
+@function calc-gutter-width($col) {
+    $grid-cols: map-get($grid-grid, "columns");
+    $col-gutter: map-get($grid-grid, "gutter");
+    @return ($grid-cols + $col) * $col-gutter / $grid-cols;
+}
