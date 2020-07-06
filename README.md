@@ -84,7 +84,7 @@ $breakpoints: (
 
 ## Documentation
 
-[Full documentation](docs/index.html)
+[Full documentation](https://andculturecode.github.io/andculturecode.scss.rhythm)
 
 # Contributing
 
