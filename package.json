@@ -40,9 +40,9 @@
         "postbuild": "npm run docs",
         "postpublish": "cross-env-shell \"git add -A && git commit -m \"$npm_package_version\" && git push origin master && npm run docs:sync\"",
         "prebuild": "npm run clean && npm run format && echo Using Node-Sass && npm run node-sass -v",
-        "prepublishOnly": "npm run build",
+        "prepublishOnly": "npm install && npm run build",
         "test": "echo \"Error: no test specified\" && exit 1",
         "watch": "node-sass --watch src -o dist"
     },
-    "version": "2.0.2"
+    "version": "2.0.3"
 }
