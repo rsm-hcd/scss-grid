@@ -24,7 +24,7 @@
         "flexbox"
     ],
     "license": "Apache-2.0",
-    "main": "dist/andculturecode.scss.grid.scss",
+    "main": "src/andculturecode.scss.grid.scss",
     "name": "andculturecode-scss-grid",
     "repository": {
         "type": "git",
@@ -32,8 +32,8 @@
     },
     "scripts": {
         "build": "node-sass src -o dist",
-        "clean": "rimraf dist",
-        "docs": "npm run sassdoc src -d docs --debug",
+        "clean": "rimraf dist && mkdir dist",
+        "docs": "sassdoc src -d docs",
         "format": "prettier --write \"src/**/*.scss\"",
         "postbuild": "npm run docs",
         "prebuild": "npm run clean && npm run format && echo Using Node-Sass && npm run node-sass -v",
