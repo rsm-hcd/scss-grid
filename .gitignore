@@ -1,2 +1,2 @@
-# Test Output directory
-bin
+dist
+node_modules

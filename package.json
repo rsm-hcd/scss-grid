@@ -7,7 +7,15 @@
     "bugs": {
         "url": "https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/issues"
     },
+    "dependencies": {
+        "node-sass": "4.14.1"
+    },
     "description": "Sass (scss) based grid system",
+    "devDependencies": {
+        "prettier": "1.19.1",
+        "rimraf": "2.6.2",
+        "sassdoc": "2.7.2"
+    },
     "homepage": "https://github.com/AndcultureCode/AndcultureCode.Scss.grid#readme",
     "keywords": [
         "scss",
@@ -23,7 +31,15 @@
         "url": "git+https://github.com/AndcultureCode/AndcultureCode.Scss.Grid.git"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "node-sass src -o dist",
+        "clean": "rimraf dist",
+        "docs": "npm run sassdoc src -d docs --debug",
+        "format": "prettier --write \"src/**/*.scss\"",
+        "postbuild": "npm run docs",
+        "prebuild": "npm run clean && npm run format && echo Using Node-Sass && npm run node-sass -v",
+        "prepublishOnly": "npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "node-sass --watch src -o dist"
     },
     "version": "2.0.0"
 }
