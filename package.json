@@ -12,6 +12,7 @@
     },
     "description": "Sass (scss) based grid system",
     "devDependencies": {
+        "cross-env": "7.0.2",
         "prettier": "1.19.1",
         "rimraf": "2.6.2",
         "sassdoc": "2.7.2"
@@ -36,6 +37,7 @@
         "docs": "sassdoc src -d docs",
         "format": "prettier --write \"src/**/*.scss\"",
         "postbuild": "npm run docs",
+        "postpublish": "cross-env-shell \"git add -A && git commit -m \"$npm_package_version\" && git push origin master\"",
         "prebuild": "npm run clean && npm run format && echo Using Node-Sass && npm run node-sass -v",
         "prepublishOnly": "npm run build",
         "test": "echo \"Error: no test specified\" && exit 1",
