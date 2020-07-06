@@ -82,6 +82,10 @@ $breakpoints: (
 }
 ```
 
+## Documentation
+
+[Full documentation](docs/index.html)
+
 # Contributing
 
 Information on contributing to this repo is in the [Contributing Guide](CONTRIBUTING.md)

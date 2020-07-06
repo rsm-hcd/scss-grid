@@ -14,8 +14,7 @@
     "devDependencies": {
         "prettier": "1.19.1",
         "rimraf": "2.6.2",
-        "sassdoc": "2.7.2",
-        "sassdocify": "0.3.4"
+        "sassdoc": "2.7.2"
     },
     "homepage": "https://github.com/AndcultureCode/AndcultureCode.Scss.grid#readme",
     "keywords": [
@@ -35,7 +34,6 @@
         "build": "node-sass src -o dist",
         "clean": "rimraf dist && mkdir dist",
         "docs": "sassdoc src -d docs",
-        "docs:publish": "sassdocify src",
         "format": "prettier --write \"src/**/*.scss\"",
         "postbuild": "npm run docs",
         "prebuild": "npm run clean && npm run format && echo Using Node-Sass && npm run node-sass -v",
