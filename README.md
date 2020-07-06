@@ -82,6 +82,13 @@ $breakpoints: (
 }
 ```
 
+## Development
+
+```shell
+npm install
+npm run watch # automatically builds as changes are made
+```
+
 ## Documentation
 
 [Full documentation](https://andculturecode.github.io/AndcultureCode.Scss.Grid/docs)
