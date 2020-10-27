@@ -94,6 +94,10 @@ npm run watch # automatically builds as changes are made
 
 [Full documentation](https://andculturecode.github.io/AndcultureCode.Scss.Grid/docs)
 
+# Community
+
+[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/images/0)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/links/0)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/images/1)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/links/1)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/images/2)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/links/2)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/images/3)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/links/3)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/images/4)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/links/4)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/images/5)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/links/5)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/images/6)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/links/6)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/images/7)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.Scss.Grid/links/7)
+
 # Contributing
 
 Information on contributing to this repo is in the [Contributing Guide](CONTRIBUTING.md)
