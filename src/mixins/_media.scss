@@ -1,7 +1,14 @@
 /// Generates media query with included content.
-/// @param {*} $breakpoint
+/// @param {string} $breakpoint Named breakpoint
 /// @content Styles to apply when screen meets max-width in $breakpoints map
-
+/// @see $breakpoints
+/// @example scss
+/// &.-span-one {
+///         @include span-col(1);
+///         @include respond-to(medium) {
+///             @include span-col(12);
+///         }
+///     }
 @mixin respond-to($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
         @media (max-width: map-get($breakpoints, $breakpoint)) {

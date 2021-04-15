@@ -1,4 +1,5 @@
 /// Consume the gutters of the grid. Useful in nested layouts.
+/// @requires $grid-grid
 @mixin collapse {
     $col-gutter: map-get($grid-grid, "gutter");
 

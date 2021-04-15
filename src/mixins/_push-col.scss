@@ -1,6 +1,14 @@
 /// Push or pull a grid column by manipulating its left margin
-/// @param {*} $col
+/// @param {number} $col Number of columns to shift
 /// @param {*} $grid [$grid-grid]
+/// @see $grid-grid
+/// @example scss
+///     &.-push-one {
+///        @include push-col(1);
+///        @include respond-to(medium) {
+///            @include push-col(0);
+///        }
+///    }
 
 @mixin push-col($col, $grid: $grid-grid) {
     $grid-cols: map-get($grid, "columns");

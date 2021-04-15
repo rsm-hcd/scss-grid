@@ -1,5 +1,6 @@
 /// Dynamic calculation of gutter width based on the columns and grid
-/// @param {*} $col
+/// @param {number} $col Number of columns
+/// @requires $grid-grid
 
 @function calc-gutter-width($col) {
     $grid-cols: map-get($grid-grid, "columns");
