@@ -1,3 +1,15 @@
+/// Helper to clear floats in a grid layout.
+/// @example scss
+///     .element {
+///         @include clearfix;
+///     }
+///
+/// @output css
+///     .element::after {
+///     clear: both;
+///     content: "";
+///     display: block;
+///     }
 @mixin clearfix {
     &::after {
         clear: both;

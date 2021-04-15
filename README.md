@@ -7,10 +7,6 @@
 
 A Sass (scss) based grid library inspired by bourbon neat and flexbox.
 
-Written by Zach McCleaf.
-
-Published by Dylan Justice.
-
 # Getting Started
 
 ```shell

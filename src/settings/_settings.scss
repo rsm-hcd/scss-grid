@@ -1,8 +1,10 @@
+/// Default grid setup
 $grid-grid: (
     columns: 12,
     gutter: 8px
 );
 
+/// Default breakpoints to be used in `respond-to` mixin
 $breakpoints: (
     "small": 767px,
     "medium": 1024px,

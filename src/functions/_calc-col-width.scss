@@ -1,3 +1,8 @@
+
+/// Dynamically calculate the column within the grid
+/// @param {*} $col
+/// @param {*} $grid [$grid-grid]
+
 @function calc-col-width($col, $grid: $grid-grid) {
     $grid-cols: map-get($grid, "columns");
     $col-gutter: map-get($grid, "gutter");

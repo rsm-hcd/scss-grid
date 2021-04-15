@@ -1,3 +1,7 @@
+/// Create a column spanning over multiple columns in a defined grid
+/// @param {*} $col
+/// @param {*} $grid [$grid-grid]
+
 @mixin span-col($col, $grid: $grid-grid) {
     width: calc-col-width($col, $grid);
     min-width: 0;
