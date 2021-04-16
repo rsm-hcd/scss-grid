@@ -9,7 +9,6 @@
 ///            @include push-col(0);
 ///        }
 ///    }
-
 @mixin push-col($col, $grid: $grid-grid) {
     $grid-cols: map-get($grid, "columns");
     margin-left: percentage($col/$grid-cols);

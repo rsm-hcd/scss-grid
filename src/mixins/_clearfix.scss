@@ -6,9 +6,9 @@
 ///
 /// @output css
 ///     .element::after {
-///     clear: both;
-///     content: "";
-///     display: block;
+///         clear: both;
+///         content: "";
+///         display: block;
 ///     }
 @mixin clearfix {
     &::after {
