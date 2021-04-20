@@ -1,0 +1,55 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "dylanjustice",
+      "name": "Dylan Justice",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22502365?v=4",
+      "profile": "http://resume.dylanjustice.com",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "wintondeshong",
+      "name": "Winton DeShong",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48424?v=4",
+      "profile": "http://www.winton.me/",
+      "contributions": [
+        "code",
+        "doc",
+        "maintenance",
+        "review"
+      ]
+    },
+    {
+      "login": "zachmccleaf",
+      "name": "Zach McCleaf",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10623386?v=4",
+      "profile": "https://github.com/zachmccleaf",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jstevenson",
+      "name": "Jim Stevenson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91424?v=4",
+      "profile": "https://github.com/jstevenson",
+      "contributions": [
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "AndcultureCode.Scss.Grid",
+  "projectOwner": "AndcultureCode",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
