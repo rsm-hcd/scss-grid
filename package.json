@@ -8,7 +8,7 @@
         "url": "https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/issues"
     },
     "dependencies": {
-        "node-sass": "4.14.1"
+        "node-sass": "7.0.0"
     },
     "description": "Sass (scss) based grid system",
     "devDependencies": {
