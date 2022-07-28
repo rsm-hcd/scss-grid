@@ -1,8 +1,12 @@
+@use "sass:map";
+@use "sass:math";
+@use "../settings/settings";
+
 /// Dynamic calculation of gutter width based on the columns and grid
 /// @param {number} $col Number of columns
 /// @requires $grid-grid
 @function calc-gutter-width($col) {
-    $grid-cols: map-get($grid-grid, "columns");
-    $col-gutter: map-get($grid-grid, "gutter");
-    @return ($grid-cols + $col) * $col-gutter / $grid-cols;
+    $grid-cols: map.get(settings.$grid-grid, "columns");
+    $col-gutter: map.get(settings.$grid-grid, "gutter");
+    @return math.div(($grid-cols + $col) * $col-gutter, $grid-cols);
 }

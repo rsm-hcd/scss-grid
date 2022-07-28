@@ -8,14 +8,14 @@
         "url": "https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/issues"
     },
     "dependencies": {
-        "node-sass": "^7.0.1"
+        "sass": "^1.54.0"
     },
     "description": "Sass (scss) based grid system",
     "devDependencies": {
-        "cross-env": "7.0.3",
-        "prettier": "2.7.1",
-        "rimraf": "3.0.2",
-        "sassdoc": "2.7.4"
+        "cross-env": "^7.0.3",
+        "prettier": "^2.7.1",
+        "rimraf": "^3.0.2",
+        "sassdoc": "^2.7.4"
     },
     "homepage": "https://github.com/AndcultureCode/AndcultureCode.Scss.grid#readme",
     "keywords": [
@@ -32,17 +32,17 @@
         "url": "git+https://github.com/AndcultureCode/AndcultureCode.Scss.Grid.git"
     },
     "scripts": {
-        "build": "node-sass src -o dist",
+        "build": "sass src/andculturecode-scss-grid.scss dist/andculturecode-scss-grid.css",
         "clean": "rimraf dist && mkdir dist",
         "docs": "sassdoc src -d docs",
         "docs:sync": "git checkout gh-pages && git merge master && git push origin gh-pages && git checkout master",
         "format": "prettier --write \"src/**/*.scss\"",
         "postbuild": "npm run docs",
         "postpublish": "cross-env-shell \"git add -A && git commit -m \"$npm_package_version\" && git push origin master && npm run docs:sync\"",
-        "prebuild": "npm run clean && npm run format && echo Using Node-Sass && npm run node-sass -v",
+        "prebuild": "npm run clean && npm run format && echo Using Sass && sass --version",
         "prepublishOnly": "npm install && npm run build",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "watch": "node-sass --watch src -o dist"
+        "watch": "sass --watch src -o dist"
     },
     "version": "3.0.0"
 }

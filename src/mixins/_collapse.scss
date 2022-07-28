@@ -1,7 +1,10 @@
+@use "sass:map";
+@use "../settings/settings";
+
 /// Consume the gutters of the grid. Useful in nested layouts.
 /// @requires $grid-grid
 @mixin collapse {
-    $col-gutter: map-get($grid-grid, "gutter");
+    $col-gutter: map.get(settings.$grid-grid, "gutter");
 
     margin-left: -#{$col-gutter};
     margin-right: -#{$col-gutter};

@@ -1,1 +1,5 @@
-@import "clearfix", "media", "push-col", "span-col", "collapse";
+@use "clearfix";
+@use "media";
+@use "push-col";
+@use "span-col";
+@use "collapse";
