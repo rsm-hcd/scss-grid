@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "sass:math";
+@use "../settings/settings";
+
 /// Push or pull a grid column by manipulating its left margin
 /// @param {number} $col Number of columns to shift
 /// @param {*} $grid [$grid-grid]
@@ -9,7 +13,7 @@
 ///            @include push-col(0);
 ///        }
 ///    }
-@mixin push-col($col, $grid: $grid-grid) {
-    $grid-cols: map-get($grid, "columns");
-    margin-left: percentage($col/$grid-cols);
+@mixin push-col($col, $grid: settings.$grid-grid) {
+    $grid-cols: map.get($grid, "columns");
+    margin-left: math.div($col, $grid-cols);
 }

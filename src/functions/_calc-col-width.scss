@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "sass:math";
+@use "../settings/settings";
+@use "calc-gutter-width";
+
 /// Dynamically calculate the column width within the grid
 /// @param {number} $col Number of columns
 /// @param {*} $grid [$grid-grid] - Grid variable to use
@@ -5,17 +10,17 @@
 /// @example scss
 ///     width: calc-col-width(6, $my-grid);
 ///
-@function calc-col-width($col, $grid: $grid-grid) {
-    $grid-cols: map-get($grid, "columns");
-    $col-gutter: map-get($grid, "gutter");
+@function calc-col-width($col, $grid: settings.$grid-grid) {
+    $grid-cols: map.get($grid, "columns");
+    $col-gutter: map.get($grid, "gutter");
 
-    $width-gutter: calc-gutter-width($col);
+    $width-gutter: calc-gutter-width.calc-gutter-width($col);
 
     @if ($col-gutter == 0) {
-        @return percentage($col / $grid-cols);
+        @return math.percentage($col / $grid-cols);
     }
     @if ($col-gutter > 0) {
-        $width: percentage($col / $grid-cols);
+        $width: math.div($col, $grid-cols);
         @return calc(#{$width} - #{$width-gutter});
     }
 }

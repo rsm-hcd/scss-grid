@@ -1,10 +1,14 @@
-@import "settings/settings";
-@import "functions/_functions";
-@import "mixins/_mixins";
+@use "settings/settings";
+@use "functions/_functions";
+@use "mixins/_mixins";
+@use "mixins/clearfix";
+@use "mixins/media";
+@use "mixins/push-col";
+@use "mixins/span-col";
 
 .o-grid {
     &__container {
-        @include clearfix();
+        @include clearfix.clearfix();
         width: 100%;
         max-width: 1200px;
         margin-left: auto;
@@ -79,206 +83,206 @@
     &__col {
         width: 100%;
         &.-span-one {
-            @include span-col(1);
+            @include span-col.span-col(1);
 
-            @include respond-to(medium) {
-                @include span-col(12);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-two {
-            @include span-col(2);
+            @include span-col.span-col(2);
 
-            @include respond-to(medium) {
-                @include span-col(12);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-three {
-            @include span-col(3);
+            @include span-col.span-col(3);
 
-            @include respond-to(medium) {
-                @include span-col(4);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(4);
             }
 
-            @include respond-to(small) {
-                @include span-col(12);
+            @include media.respond-to(small) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-md-three {
-            @include span-col(3);
+            @include span-col.span-col(3);
 
-            @include respond-to(medium) {
-                @include span-col(12);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-four {
-            @include span-col(4);
+            @include span-col.span-col(4);
 
-            @include respond-to(medium) {
-                @include span-col(12);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-five {
-            @include span-col(5);
+            @include span-col.span-col(5);
 
-            @include respond-to(medium) {
-                @include span-col(8);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(8);
             }
 
-            @include respond-to(small) {
-                @include span-col(12);
+            @include media.respond-to(small) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-six {
-            @include span-col(6);
+            @include span-col.span-col(6);
 
-            @include respond-to(medium) {
-                @include span-col(12);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-seven {
-            @include span-col(7);
+            @include span-col.span-col(7);
 
-            @include respond-to(medium) {
-                @include span-col(7);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(7);
             }
 
-            @include respond-to(small) {
-                @include span-col(12);
+            @include media.respond-to(small) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-eight {
-            @include span-col(8);
+            @include span-col.span-col(8);
 
-            @include respond-to(medium) {
-                @include span-col(12);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-nine {
-            @include span-col(9);
+            @include span-col.span-col(9);
 
-            @include respond-to(medium) {
-                @include span-col(12);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-ten {
-            @include span-col(10);
+            @include span-col.span-col(10);
 
-            @include respond-to(medium) {
-                @include span-col(12);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-eleven {
-            @include span-col(11);
+            @include span-col.span-col(11);
 
-            @include respond-to(medium) {
-                @include span-col(12);
+            @include media.respond-to(medium) {
+                @include span-col.span-col(12);
             }
         }
 
         &.-span-twelve {
-            @include span-col(12);
+            @include span-col.span-col(12);
         }
 
         &.-push-one {
-            @include push-col(1);
+            @include push-col.push-col(1);
 
-            @include respond-to(medium) {
-                @include push-col(0);
+            @include media.respond-to(medium) {
+                @include push-col.push-col(0);
             }
         }
 
         &.-push-two {
-            @include push-col(2);
+            @include push-col.push-col(2);
 
-            @include respond-to(medium) {
-                @include push-col(0);
+            @include media.respond-to(medium) {
+                @include push-col.push-col(0);
             }
         }
 
         &.-push-three {
-            @include push-col(3);
+            @include push-col.push-col(3);
 
-            @include respond-to(medium) {
-                @include push-col(0);
+            @include media.respond-to(medium) {
+                @include push-col.push-col(0);
             }
         }
 
         &.-push-four {
-            @include push-col(4);
+            @include push-col.push-col(4);
 
-            @include respond-to(medium) {
-                @include push-col(4);
+            @include media.respond-to(medium) {
+                @include push-col.push-col(4);
             }
 
-            @include respond-to(small) {
-                @include push-col(0);
+            @include media.respond-to(small) {
+                @include push-col.push-col(0);
             }
         }
 
         &.-push-five {
-            @include push-col(5);
+            @include push-col.push-col(5);
 
-            @include respond-to(medium) {
-                @include push-col(0);
+            @include media.respond-to(medium) {
+                @include push-col.push-col(0);
             }
         }
 
         &.-push-six {
-            @include push-col(6);
+            @include push-col.push-col(6);
 
-            @include respond-to(medium) {
-                @include push-col(0);
+            @include media.respond-to(medium) {
+                @include push-col.push-col(0);
             }
         }
 
         &.-push-seven {
-            @include push-col(7);
+            @include push-col.push-col(7);
 
-            @include respond-to(medium) {
-                @include push-col(0);
+            @include media.respond-to(medium) {
+                @include push-col.push-col(0);
             }
         }
 
         &.-push-eight {
-            @include push-col(8);
+            @include push-col.push-col(8);
 
-            @include respond-to(medium) {
-                @include push-col(0);
+            @include media.respond-to(medium) {
+                @include push-col.push-col(0);
             }
         }
 
         &.-push-nine {
-            @include push-col(9);
+            @include push-col.push-col(9);
 
-            @include respond-to(medium) {
-                @include push-col(0);
+            @include media.respond-to(medium) {
+                @include push-col.push-col(0);
             }
         }
 
         &.-push-ten {
-            @include push-col(10);
+            @include push-col.push-col(10);
 
-            @include respond-to(medium) {
-                @include push-col(0);
+            @include media.respond-to(medium) {
+                @include push-col.push-col(0);
             }
         }
 
         &.-push-eleven {
-            @include push-col(11);
+            @include push-col.push-col(11);
 
-            @include respond-to(medium) {
-                @include push-col(0);
+            @include media.respond-to(medium) {
+                @include push-col.push-col(0);
             }
         }
 
@@ -297,7 +301,7 @@
         &.-justify-right {
             text-align: right;
 
-            @include respond-to(medium) {
+            @include media.respond-to(medium) {
                 text-align: left;
             }
         }
