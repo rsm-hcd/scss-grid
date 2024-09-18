@@ -7,6 +7,9 @@
         "dist/**",
         "src/**"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "keywords": [
         "scss",
         "sass",
