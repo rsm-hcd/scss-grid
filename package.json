@@ -3,6 +3,10 @@
     "description": "Sass (scss) based grid system",
     "version": "3.0.1",
     "homepage": "https://github.com/rsm-hcd/scss-grid#readme",
+    "files": [
+        "dist/**",
+        "src/**"
+    ],
     "keywords": [
         "scss",
         "sass",
@@ -25,7 +29,6 @@
         "docs:sync": "git checkout gh-pages && git merge master && git push origin gh-pages && git checkout master",
         "format": "prettier --write \"src/**/*.scss\"",
         "postbuild": "npm run docs",
-        "postpublish": "cross-env-shell \"git add -A && git commit -m \"$npm_package_version\" && git push origin master && npm run docs:sync\"",
         "prebuild": "npm run clean && npm run format && echo Using Sass && sass --version",
         "prepublishOnly": "npm install && npm run build",
         "test": "echo \"Error: no test specified\" && exit 1",
