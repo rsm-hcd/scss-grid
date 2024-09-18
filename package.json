@@ -1,23 +1,8 @@
 {
-    "author": {
-        "email": "developer@andculture.com",
-        "name": "andculture",
-        "url": "https://www.andculture.com"
-    },
-    "bugs": {
-        "url": "https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/issues"
-    },
-    "dependencies": {
-        "sass": "^1.54.0"
-    },
+    "name": "@rsm-hcd/scss-grid",
     "description": "Sass (scss) based grid system",
-    "devDependencies": {
-        "cross-env": "^7.0.3",
-        "prettier": "^2.7.1",
-        "rimraf": "^3.0.2",
-        "sassdoc": "^2.7.4"
-    },
-    "homepage": "https://github.com/AndcultureCode/AndcultureCode.Scss.grid#readme",
+    "version": "3.0.1",
+    "homepage": "https://github.com/rsm-hcd/scss-grid#readme",
     "keywords": [
         "scss",
         "sass",
@@ -25,14 +10,16 @@
         "flexbox"
     ],
     "license": "Apache-2.0",
-    "main": "dist/andculturecode-scss-grid",
-    "name": "andculturecode-scss-grid",
+    "main": "dist/scss-grid",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AndcultureCode/AndcultureCode.Scss.Grid.git"
+        "url": "git+https://github.com/rsm-hcd/scss-grid.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rsm-hcd/scss-grid/issues"
     },
     "scripts": {
-        "build": "sass src/andculturecode-scss-grid.scss dist/andculturecode-scss-grid.css",
+        "build": "sass src/scss-grid.scss dist/scss-grid.css",
         "clean": "rimraf dist && mkdir dist",
         "docs": "sassdoc src -d docs",
         "docs:sync": "git checkout gh-pages && git merge master && git push origin gh-pages && git checkout master",
@@ -44,5 +31,13 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "watch": "sass --watch src -o dist"
     },
-    "version": "3.0.0"
+    "dependencies": {
+        "sass": "^1.79.1"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "prettier": "^3.3.3",
+        "rimraf": "^6.0.1",
+        "sassdoc": "^2.7.4"
+    }
 }

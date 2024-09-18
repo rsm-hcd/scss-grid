@@ -21,6 +21,6 @@
     }
     @if ($col-gutter > 0) {
         $width: math.div($col, $grid-cols);
-        @return calc(#{$width} - #{$width-gutter});
+        @return calc(#{$width}px - #{$width-gutter});
     }
 }

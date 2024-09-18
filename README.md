@@ -1,27 +1,20 @@
-# AndcultureCode.Scss.Grid
+# Scss-Grid (RSM HCD)
 
-[![Build Status](https://travis-ci.org/AndcultureCode/AndcultureCode.Scss.Grid.svg?branch=master)](https://travis-ci.org/AndcultureCode/AndcultureCode.Scss.Grid)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-A Sass (scss) based grid library inspired by bourbon neat and flexbox.
-
-# Getting Started
+## Getting Started
 
 ```shell
 #npm
-npm install --save-dev andculturecode-scss-grid
+npm install --save-dev @rsm-hcd/scss-grid
 
 # yarn
-yarn add andculturecode-scss-grid --dev
+yarn add @rsm-hcd/scss-grid --dev
 ```
 
 ```scss
-@import andculturecode-scss-grid;
+@import @rsm-hcd/scss-grid;
 ```
 
-# Usage
+## Usage
 
 ```html
 <div class="o-grid__container">
@@ -81,40 +74,17 @@ $breakpoints: (
 }
 ```
 
-## Development
+### Development
 
 ```shell
 npm install
 npm run watch # automatically builds as changes are made
 ```
 
-## Documentation
+### Documentation
 
 [Full documentation](https://andculturecode.github.io/AndcultureCode.Scss.Grid/docs)
 
-# Contributing
+## Contributing
 
 Information on contributing to this repo is in the [Contributing Guide](CONTRIBUTING.md)
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="http://resume.dylanjustice.com"><img src="https://avatars.githubusercontent.com/u/22502365?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dylan Justice</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/commits?author=dylanjustice" title="Code">💻</a> <a href="https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/commits?author=dylanjustice" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://www.winton.me/"><img src="https://avatars.githubusercontent.com/u/48424?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Winton DeShong</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/commits?author=wintondeshong" title="Code">💻</a> <a href="https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/commits?author=wintondeshong" title="Documentation">📖</a> <a href="#maintenance-wintondeshong" title="Maintenance">🚧</a> <a href="https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/pulls?q=is%3Apr+reviewed-by%3Awintondeshong" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="https://github.com/zachmccleaf"><img src="https://avatars.githubusercontent.com/u/10623386?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Zach McCleaf</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/commits?author=zachmccleaf" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/jstevenson"><img src="https://avatars.githubusercontent.com/u/91424?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jim Stevenson</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.Scss.Grid/pulls?q=is%3Apr+reviewed-by%3Ajstevenson" title="Reviewed Pull Requests">👀</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
