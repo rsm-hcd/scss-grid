@@ -16,11 +16,10 @@
 
     $width-gutter: calc-gutter-width.calc-gutter-width($col);
 
-    @if ($col-gutter == 0) {
-        @return math.percentage($col / $grid-cols);
-    }
     @if ($col-gutter > 0) {
         $width: math.div($col, $grid-cols);
         @return calc(#{$width}px - #{$width-gutter});
     }
+
+    @return math.percentage($col / $grid-cols);
 }
